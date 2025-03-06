@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Liquid Sweets- Rangoli Ice Cream</title>
+  <style>
+    body { background-color: #d32f2f; font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    .container { background-color: #fff; border-radius: 10px; padding: 15px; margin: 15px; box-shadow: 0 2px 6px rgba(0,0,0,0.15); }
+    header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+    header h2 { color: #d32f2f; margin: 0; }
+    .back-link { text-decoration: none; color: #d32f2f; border: 2px solid #d32f2f; padding: 6px 10px; border-radius: 5px; font-weight: bold; transition: background 0.2s; }
+    .back-link:hover { background-color: #ffe5e5; }
+    .category-image { text-align: center; margin-bottom: 10px; }
+    .category-image img { max-width: 200px; border-radius: 8px; }
+    .menu-items { margin-top: 20px; }
+    .menu-item.header, .menu-item { display: grid; grid-template-columns: 2fr repeat(3, 1fr); align-items: center; padding: 10px 0; }
+    .menu-item.header { border-bottom: 2px solid #d32f2f; font-weight: bold; color: #d32f2f; }
+    .menu-item { border-bottom: 1px dashed #d32f2f; }
+    .menu-item:last-child { border-bottom: none; }
+    .item-name { color: #d32f2f; }
+    .price { color: #d32f2f; font-weight: bold; text-align: center; }
+    footer { text-align: center; background-color: #fff; border-top: 2px solid #d32f2f; padding: 10px; margin-top: 20px; }
+    footer a { color: #d32f2f; text-decoration: none; font-weight: bold; }
+    footer a:hover { text-decoration: underline; }
+    @media (max-width: 600px) { 
+      .container { margin: 10px; } 
+      .menu-item { font-size: 0.95em; } 
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="index.html" class="back-link">← Back</a>
+      <h2>Liquid Sweets</h2>
+    </header>
+    <div class="category-image">
+      <img src="rabdi.png" alt="Liquid Sweets">
+    </div>
+    <div class="menu-items">
+      <div class="menu-item header">
+        <span class="item-name">Item</span>
+        <span class="price">250 gm</span>
+        <span class="price">500 gm</span>
+        <span class="price">1 kg</span>
+      </div>
+      <div class="menu-item">
+        <span class="item-name">Kesar Angur Rabdi</span>
+        <span class="price">110</span>
+        <span class="price">215</span>
+        <span class="price">430</span>
+      </div>
+      <div class="menu-item">
+        <span class="item-name">Black Current Plaza </span>
+        <span class="price">105</span>
+        <span class="price">210</span>
+        <span class="price">420</span>
+      </div>
+      <div class="menu-item">
+        <span class="item-name">Kaju Gulkand Plaza </span>
+        <span class="price">105</span>
+        <span class="price">210</span>
+        <span class="price">420</span>
+      </div>
+      <div class="menu-item">
+        <span class="item-name">Rajbhog Plaza </span>
+        <span class="price">105</span>
+        <span class="price">210</span>
+        <span class="price">420</span>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

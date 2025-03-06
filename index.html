@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rangoli Ice Cream Menu - Adajan Surat</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    /* Body with red background */
+    body {
+      background-color: #d32f2f;
+      font-family: Arial, sans-serif;
+    }
+    /* SPLASH SCREEN */
+    #splash-screen {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #ffffff;
+      z-index: 9999;
+    }
+    #splash-screen img {
+      max-width: 250px;
+    }
+    /* HOME CONTENT (hidden initially) */
+    #home-container {
+      display: none;
+      min-height: 100vh;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    /* White content box */
+    .container {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 15px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+      text-align: center;
+    }
+    .container h1 {
+      color: #d32f2f;
+      margin-bottom: 5px;
+    }
+    .container p {
+      color: #d32f2f;
+      margin-bottom: 15px;
+    }
+    /* Category Grid */
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 15px;
+    }
+    .category-card {
+      background-color: #fff;
+      border: 2px solid #d32f2f;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #d32f2f;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+      transition: transform 0.2s, background 0.2s;
+      font-weight: bold;
+    }
+    .category-card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 8px;
+      margin-bottom: 8px;
+      object-fit: cover;
+    }
+    .category-card:hover {
+      transform: scale(1.05);
+      background-color: #ffe5e5;
+    }
+    /* Footer */
+    footer {
+      text-align: center;
+      background-color: #fff;
+      border-top: 2px solid #ffffff;
+      padding: 10px;
+      margin-top: 20px;
+    }
+    footer a {
+      color: #000000;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    /* Responsive */
+    @media (max-width: 600px) {
+      .container {
+        margin: 10px;
+      }
+      .category-card {
+        font-size: 0.95em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- SPLASH SCREEN (shows only on first load) -->
+  <div id="splash-screen">
+    <!-- Replace with your own splash image or logo -->
+    <img src="logo.png" alt="Splash Logo">
+  </div>
+
+  <!-- HOME CONTENT -->
+  <div id="home-container">
+    <div class="container">
+      <h1>Rangoli Ice Cream Menu</h1>
+      <p>Adajan, Surat</p>
+      <!-- CATEGORY GRID -->
+      <div class="category-grid">
+        <a href="category1.html" class="category-card">
+          <img src="sandwich.png" alt="">
+          <span>Grilled Sandwich</span>
+        </a>
+        <a href="category2.html" class="category-card">
+          <img src="shrikhand.png" alt="">
+          <span>Ice Cream Shrikhand</span>
+        </a>
+        <a href="category3.html" class="category-card">
+          <img src="richshake.jpg" alt="R.I.C.H Shake">
+          <span>R.I.C.H Shake</span>
+        </a>
+        <a href="category4.html" class="category-card">
+          <img src="rabdi.png" alt="Liquid Sweets">
+          <span>Liquid Sweets</span>
+        </a>
+        <a href="category5.html" class="category-card">
+          <img src="lassi.png" alt="Lassi">
+          <span>Lassi</span>
+        </a>
+        <a href="category6.html" class="category-card">
+          <img src="cold.jpg" alt="Cold Coco &amp; Coffee">
+          <span>Cold Coco &amp; Coffee</span>
+        </a>
+        <a href="category7.html" class="category-card">
+          <img src="casata.png" alt="Classic Cassata">
+          <span>Classic Cassata</span>
+        </a>
+        <a href="category8.html" class="category-card">
+          <img src="scoop.png" alt="Premium Ice Cream">
+          <span>Premium Ice Cream</span>
+        </a>
+        <a href="category9.html" class="category-card">
+          <img src="mom.png" alt="MOM Shake">
+          <span>MOM Shake</span>
+        </a>
+        <a href="category10.html" class="category-card">
+          <img src="signature.png" alt="Signature Shake">
+          <span>Signature Shake</span>
+        </a>
+        <a href="category11.html" class="category-card">
+          <img src="sundae.png" alt="Signature Sundae">
+          <span>Signature Sundae</span>
+        </a>
+        <a href="category12.html" class="category-card">
+          <img src="combo.png" alt="Special Combo">
+          <span>Special Combo</span>
+        </a>
+        <a href="category13.html" class="category-card">
+          <img src="brownie.png" alt="Sizzling Brownie">
+          <span>Sizzling Brownie</span>
+        </a>
+        <a href="category14.html" class="category-card">
+          <img src="candy.png" alt="Cone &amp; Candy">
+          <span>Cone &amp; Candy</span>
+        </a>
+        <a href="category15.html" class="category-card">
+          <img src="juice.jpg" alt="Healthy Fresh Juice &amp; Shake">
+          <span>Healthy Juice &amp; Shake</span>
+        </a>
+      </div>
+    </div>
+    <footer>
+      <a href="https://pearlcastlestudio.com" target="_blank">Powered by Pearl Castle Studio</a>
+    </footer>
+  </div>
+
+  <!-- JavaScript: Check for skipSplash and manage splash screen display -->
+  <script>
+    window.addEventListener('DOMContentLoaded', function(){
+      if (window.location.search.includes('skipSplash')) {
+        document.getElementById('splash-screen').style.display = 'none';
+        document.getElementById('home-container').style.display = 'block';
+      }
+    });
+
+    window.addEventListener('load', function() {
+      if (!window.location.search.includes('skipSplash')) {
+        if (sessionStorage.getItem("splashShown") === "true") {
+          document.getElementById('splash-screen').style.display = 'none';
+          document.getElementById('home-container').style.display = 'block';
+        } else {
+          setTimeout(function() {
+            document.getElementById('splash-screen').style.display = 'none';
+            document.getElementById('home-container').style.display = 'block';
+            sessionStorage.setItem("splashShown", "true");
+          }, 3);
+        }
+      }
+    });
+  </script>
+</body>
+</html>

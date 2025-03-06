@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Special Combo - Rangoli Ice Cream</title>
+  <style>
+    body { background-color: #d32f2f; font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    .container { background-color: #fff; border-radius: 10px; padding: 15px; margin: 15px; box-shadow: 0 2px 6px rgba(0,0,0,0.15); }
+    header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+    header h2 { color: #d32f2f; margin: 0; }
+    .back-link { text-decoration: none; color: #d32f2f; border: 2px solid #d32f2f; padding: 6px 10px; border-radius: 5px; font-weight: bold; transition: background 0.2s; }
+    .back-link:hover { background-color: #ffe5e5; }
+    .category-image { text-align: center; margin-bottom: 10px; }
+    .category-image img { max-width: 200px; border-radius: 8px; }
+    .menu-items { margin-top: 20px; }
+    .menu-item.header { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 2px solid #d32f2f; font-weight: bold; color: #d32f2f; }
+    .menu-item { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px dashed #d32f2f; }
+    .menu-item:last-child { border-bottom: none; }
+    .item-name { color: #d32f2f; }
+    .price { color: #d32f2f; font-weight: bold; }
+    footer { text-align: center; background-color: #fff; border-top: 2px solid #d32f2f; padding: 10px; margin-top: 20px; }
+    footer a { color: #d32f2f; text-decoration: none; font-weight: bold; }
+    footer a:hover { text-decoration: underline; }
+    @media (max-width: 600px) { .container { margin: 10px; } .menu-item { font-size: 0.95em; } }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="index.html" class="back-link">← Back</a>
+      <h2>Special Combo</h2>
+    </header>
+    <div class="category-image">
+      <img src="combo.png" alt="Special Combo">
+    </div>
+    <div class="menu-items">
+      <div class="menu-item header">
+        <span class="item-name">Item</span>
+        <span class="price">Price</span>
+      </div>
+      <div class="menu-item">
+        <span class="item-name">Aloo Matar Sandwich + Cold Coco</span>
+        <span class="price">99</span>
+      </div>
+      
+      <!-- Add more items as needed -->
+    </div>
+  </div>
+  
+</body>
+</html>
